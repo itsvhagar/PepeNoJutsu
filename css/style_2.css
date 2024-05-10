@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background: #000000;  
+    font-family: "Luckiest Guy", cursive;
+    color: #fff;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+}
+h1{
+    font-family: "Luckiest Guy", cursive;
+}
+    @keyframes heroAnimation {
+    0%   {transform: rotate(0deg); right: -60%;}
+    10%  {transform: rotate(20deg); right: -56%;}
+    20%  {transform: rotate(40deg); right: -60%;}
+    30%  {transform: rotate(60deg); right: -52%;}
+    40%  {transform: rotate(90deg); right: -56%;}
+    50%  {transform: rotate(120deg); right: -70%;}
+    60%  {transform: rotate(150deg); right: -54%;}
+    70%  {transform: rotate(180deg); right: -68%;}
+    80%  {transform: rotate(210deg); right: -53%;}
+    90%  {transform: rotate(240deg); right: -69%;}
+    100% {transform: rotate(360deg); right: -60%;}
+}
+/*.hero {*/
+/*    min-height: 100vh;*/
+/*    width: 100%;*/
+/*}*/
+/*.gradient{*/
+/*    position: absolute;*/
+/*    right: -60%;*/
+/*    width: 100%;*/
+/*    transform: rotate(0deg);*/
+/*    animation: heroAnimation 35s linear infinite;*/
+/*    top: 13%;*/
+/*    z-index: -1;*/
+/*}*/
+.hero {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    /*left: 0;*/
+    width: 100%;
+    height: 100%;
+    background: url('./img/gradient.png') no-repeat;
+    background-size: contain;
+    z-index: -1;
+    animation: heroAnimation 35s linear infinite;
+}
+
+.navbar-brand img{
+    width: 110px;
+}
+.navbar{
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,1) !important;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+.hero p{
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+.hero ol li{
+    font-family: "Comic Neue", cursive;
+}
+.hero ol{
+    margin-top: 40px;
+}
+.about-card{
+    height: 500px;
+    overflow-y: scroll;
+    font-family: 'Comic Neue';
+    border: solid 2px #11dbff;
+    border-radius: 5px;
+    padding: 50px;
+    padding-top: 100px;
+    font-size: 20px;
+    margin-top: 20px;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #6E23D4, #11DBFF, #000000, #000000, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom,#6E23D4, #11DBFF, #000000, #000000 ,#000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/* Navbar Hover Styles */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #77c4ff; /* Change text color on hover */
+}
+
+/* Underline Effect */
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #77c4ff; /* Underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 100%; /* Increase width on hover */
+}
+
+/* Background Color Change */
+.navbar-nav .nav-item:hover .nav-link {
+    color: #77c4ff; /* Change background color on hover */
+}
+.socials a{
+    color: #fff;
+    padding: 10px;
+}
+.socials a:hover{
+    color: #77c4ff; 
+    transition: 0.5s;
+}
+.btn-jyds{
+    background-color: transparent;
+    color: #77c4ff;
+    border: solid 2px #77c4ff;
+    border-radius: 100px;
+    font-family:  "Luckiest Guy", cursive;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+.btn-jyds:hover{
+    background-color: #77c4ff;
+    color: #000 !important;
+    transition: 0.3s;
+}
+.hero .title{
+    font-size: 80px;
+    margin: 100px auto 20px;
+}
+.hero .title span{
+    background-color: #11dbff;
+    color: #000;
+    padding: 10px;
+    line-height: 80px;
+}
+.hightlight{
+    background-color: #11dbff;
+    color: #000;
+    padding: 10px;
+    
+}
+.sp-100{
+    height: 100px;
+}
+.address-input{
+    width: 100%;
+    display: flex;
+}
+#presale-address{
+    width: 400px;
+    border-radius: 50px 0 0 50px;
+    padding: 10px;
+    border: solid 3px #ffffff;
+    color: #000 !important;
+    border-right: none;
+    background-color: #11dbff;
+}
+.copy-btn{
+    border-radius: 0 50px 50px 0;
+    padding: 10px 20px;
+    color: #000;
+    cursor: pointer;
+}
+.jyds-mascot{
+    width: 100%;
+}
+.jyds-mascot-2{
+    width: 100%;
+}
+.progress-bar{
+    height: 30px;
+    width: 100%;
+    border: solid 2px #fff;
+    background: transparent;
+    border-radius: 50px;
+    position: relative;
+}
+.inner-bar{
+    position: absolute;
+    width: 50%; 
+    background: #11DBFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #7c04cd, #11DBFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #7c04cd, #11DBFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 25px;
+    border-radius: 50px 0 0 50px;
+    left: 1px;
+}
+.cigar-icon img{
+    width: 100%;
+}
+.cigar-icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    top: -75px;
+}
+.color-cyan{
+    color: #11DBFF;
+}
+#tokenomics p{
+    font-family: "Comic Neue", cursive;
+    font-size: 20px;
+}
+#tokenomics ul{
+    font-family: "Comic Neue", cursive;
+    font-size: 30px;
+}
+#tokenomics ul {
+    list-style-type: none;
+    padding-left: 20px; /* Adjust as needed */
+  }
+  
+  #tokenomics  ul li:before {
+    content: "";
+    border-style: solid;
+    border-width: 0.5em 0.5em 0 0.5em; /* Adjust size of triangle */
+    border-color: #11DBFF; /* Color of the triangle */
+    display: inline-block;
+    width: 0.8em; /* Adjust width of triangle */
+    height: 0.8em; /* Adjust height of triangle */
+    margin-right: 10px; /* Spacing between triangle and text */
+    transform: rotate(-45deg); /* Rotate to form a triangle */
+  }
+#tokenomics .image-card img{
+    width: 100%;
+}
+.random-thuglife img.cigar{
+    width: 100%;
+    animation: tl-animation 5s infinite;
+    animation-delay: 2s;
+}
+.random-thuglife img.chain{
+    width: 100%;
+    animation: tl-animation 4s infinite;
+    animation-delay: 3s;
+}
+.random-thuglife img.glasses{
+    width: 100%;
+    animation: tl-animation 7s infinite;
+}
+footer{
+    font-family: "Comic Neue", cursive;
+}
+hr{
+    border-top: 1px solid rgba(255,255,255,0.3) !important;
+    width: 228px;
+    margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FCB880; 
+  }
+@keyframes tl-animation {
+    0% {transform: rotate(-45deg);}
+    50% {transform: rotate(45deg);}
+    100% {transform: rotate(-45deg);}
+}
+.meme-section{
+    height: 90vh;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+    justify-content: center;
+}
+.image-container img{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.modal-footer, .modal-header{
+    border: none !important;
+}
+.modal-content{
+    background: rgba(0,0,0,1) !important;
+    border: none !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+button.close{
+    font-size: 50px !important;
+}
+/* Small Devices i.e. Phones */
+@media only screen and (max-width: 600px) {
+    .gradient{
+        /* right: -150%;
+        width: 250%; */
+        display: none;
+    }
+    .hero .title{
+        font-size: 40px;
+    }
+    .cigar-icon{
+        top: -75px;
+    }
+    .container{
+        width:90%;
+    }
+    .image-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    justify-content: center;
+}
+}
+
+/* Large Devices */
+@media only screen and (min-width: 600px) {
+    .navbar-nav{
+        margin-left: 50px;
+    }
+    .navbar-nav .nav-link{
+        padding-right:15px !important;
+        padding-left: 15px !important;
+    }
+    .jyds-mascot{
+        margin-top: -60px;
+    }
+}
+
+#navbar {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+}
+
+
+#header-title {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #ffffff;
+    font-family: 'Comic Neue', Arial;
+}
+
+#header-list {
+    margin-left: 10px;
+    padding-left: 20px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-family: 'Comic Neue', Arial;
+}
+
+#navbar a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #ffffff;
+    font-family: 'Comic Neue', Arial;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+#navbar a:hover {
+    color: #01ff00; /* Change text color to green on hover */
+}
+
+#header-title img {
+    width: 180px; /* Adjust image size */
+}
