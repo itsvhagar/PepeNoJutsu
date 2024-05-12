@@ -377,6 +377,7 @@ button.close{
     color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -385,21 +386,26 @@ button.close{
     backdrop-filter: blur(4px);
 }
 
+#header-title img {
+    width: 180px;
+    margin-right: 20px;
+}
 
-#header-title {
+#header-list, #socials {
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    color: #ffffff;
-    font-family: 'Comic Neue', Arial;
 }
 
 #header-list {
-    margin-left: 10px;
-    padding-left: 20px;
+    margin-right: auto; /* Push to the left, leaving space for the socials */
+}
+
+#header-list a, #socials a {
+    margin-right: 20px;
     white-space: nowrap;
     color: #ffffff;
     font-family: 'Comic Neue', Arial;
+    text-decoration: none;
 }
 
 #navbar a {
@@ -409,13 +415,9 @@ button.close{
     color: #ffffff;
     font-family: 'Comic Neue', Arial;
     text-decoration: none;
-    transition: color 0.3s; /* Smooth transition for color change */
+    transition: color 0.3s;
 }
 
 #navbar a:hover {
-    color: #01ff00; /* Change text color to green on hover */
-}
-
-#header-title img {
-    width: 180px; /* Adjust image size */
+    color: #01ff00;
 }
